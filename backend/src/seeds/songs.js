@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
 import { Song } from "../models/song.model.js";
 import { config } from "dotenv";
+import dns from "dns";
+
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 config();
 
